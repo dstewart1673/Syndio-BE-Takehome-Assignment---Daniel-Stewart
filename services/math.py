@@ -3,7 +3,7 @@ import statsmodels.formula.api as smf
 import pandas as pd
 
 def generate_pvalues(x_vals, y_vals):
-    '''takes dataframe of independent variables and dataframe of dependent variable and returns the pvalues for the OLS regression'''
+    '''generates pvalues for the independent variables passed as x_vals'''
     
     est = sm.OLS(y_vals, x_vals).fit()
     
